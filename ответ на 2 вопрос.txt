@@ -1,0 +1,6 @@
+Select p.name_product, c.name_category 
+from products p
+left join categories c on p.id_category=c.id_category
+это если у нас 2 таблицы, но так неправильно
+для связи много ко много нужно делать промежуточную таблицу с id_category и id_product что бы избежать дублирования данных,
+но если в категориях хранится информация только о названии категории и id - лучше денормализовать и просто в таблицу products добавить поле category

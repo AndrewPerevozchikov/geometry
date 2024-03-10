@@ -1,0 +1,11 @@
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\net7.0\GeometryLibrary.deps.json
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\net7.0\GeometryLibrary.dll
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\net7.0\GeometryLibrary.pdb
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\GeometryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\GeometryLibrary.AssemblyInfoInputs.cache
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\GeometryLibrary.AssemblyInfo.cs
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\GeometryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\GeometryLibrary.dll
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\refint\GeometryLibrary.dll
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\GeometryLibrary.pdb
+C:\Users\pa198\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\net7.0\ref\GeometryLibrary.dll
