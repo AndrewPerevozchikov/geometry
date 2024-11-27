@@ -5,14 +5,13 @@ namespace TestGeometry
 {
     public class TestFigure
     {
-        CalculatorSquare calculator = new CalculatorSquare();
         [Theory]
         [InlineData(3, 3, 5, false, "4,14578098794425", true)]
         [InlineData(4, 5, 3, true, "6", true)]
         [InlineData(4, 5, 3, false, "6", false)]
         [InlineData(3, 2, 4, false, "6,123434256465", false)]
-        [InlineData(3, 2, 7, false, "Неверно указаны стороны треугольника", true)]
-        [InlineData(3, 2, 0, false, "Неверно указаны стороны треугольника", true)]
+        [InlineData(3, 2, 7, false, "РќРµРІРµСЂРЅРѕ СѓРєР°Р·Р°РЅС‹ СЃС‚РѕСЂРѕРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°", true)]
+        [InlineData(3, 2, 0, false, "РќРµРІРµСЂРЅРѕ СѓРєР°Р·Р°РЅС‹ СЃС‚РѕСЂРѕРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°", true)]
         public void TriangleTest(double side1, double side2, double side3,
             bool isRightAngledTriangle, string resultCalculateSquare, bool result)
         {
@@ -20,7 +19,7 @@ namespace TestGeometry
             {
                 var triangle = new Triangle(side1, side2, side3);
                 Assert.Equal(result,
-                    (resultCalculateSquare == calculator.GetSquare(triangle).ToString() &&
+                    (resultCalculateSquare == triangle.GetSquare().ToString() &&
                     isRightAngledTriangle == triangle.IsRightAngledTriangle)
                     );
             }
@@ -36,13 +35,13 @@ namespace TestGeometry
         [InlineData(3.5, "38,48451000647496", true)]
         [InlineData(1, "3.14", false)]
         [InlineData(0, "0", true)]
-        [InlineData(-1, "Неверно указан радиус", true)]
+        [InlineData(-1, "РќРµРІРµСЂРЅРѕ СѓРєР°Р·Р°РЅ СЂР°РґРёСѓСЃ", true)]
         public void CircleTest(double radius, string resultCalculateSquare, bool result)
         {
             try
             {
                 var circle = new Circle(radius);
-                Assert.Equal(result, (resultCalculateSquare == calculator.GetSquare(circle).ToString()));
+                Assert.Equal(result, (resultCalculateSquare == circle.GetSquare().ToString()));
             }
             catch (ArgumentException ex)
             {

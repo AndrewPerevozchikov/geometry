@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PA8VMkCdNvpicraBC/cERnmDUUArvbWaDHksAz2gthrQoZgKtwccnJimS3uAhtLAoKWUIrGaJBYtX6l8DVLZpQ==",
+  "dgSpecHash": "WApBNRYKKLLlDjSAfhBedZfy1v2FU6a42xSmljKRNcEQSCh8R418yg/o/xfX1XTeXKwqEzpDOpsmaVX2Y3YjeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pa198\\source\\repos\\ClassLibrary1\\TestGeometry\\TestGeometry.csproj",
+  "projectFilePath": "C:\\Users\\pa198\\OneDrive\\Рабочий стол\\Новая папка (2)\\geometry\\TestGeometry\\TestGeometry.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pa198\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\pa198\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",

@@ -2,21 +2,20 @@
 {
     public class Triangle : IFigure
     {
-        public bool IsRightAngledTriangle { get; private set; }
-        public double SideMax { get; private set; }
-        public double Side2 { get; private set; }
-        public double Side3 { get; private set; }
+
+        private double SideMax { get; }
+        private double Side2 { get; }
+        private double Side3 { get; }
+        public bool IsRightAngledTriangle => Math.Pow(SideMax, 2) == Math.Pow(Side2, 2) + Math.Pow(Side3, 2);
 
         public Triangle(double side1, double side2, double side3)
         {
             var sides = SortSides(side1, side2, side3);
-            SideMax = sides.Item1;
-            Side2 = sides.Item2;
-            Side3 = sides.Item3;
-            if (!Validation(SideMax, Side2, Side3))
-                throw new ArgumentException("Неверно указаны стороны треугольника");
-            if (SideMax * SideMax == Side2 * Side2 + Side3 * Side3)
-                IsRightAngledTriangle = true;
+            SideMax = sides.Side1;
+            Side2 = sides.Side2;
+            Side3 = sides.Side3;
+            
+            if (!Validation(SideMax, Side2, Side3)) throw new ArgumentException("Неверно указаны стороны треугольника");
         }
 
         public double GetSquare()
@@ -34,14 +33,13 @@
         {
             if (sideMax <= 0 || side2 <= 0 || side3 <= 0)
                 return false;
-            if (sideMax >= side2 + side3)
-                return false;
-            return true;
+            
+            return !(sideMax >= side2 + side3);
         }
 
-        private (double, double, double) SortSides(double side1, double side2, double side3)
+        private (double Side1, double Side2, double Side3) SortSides(double side1, double side2, double side3)
         {
-            List<double> list = new List<double>() { side1, side2, side3 };
+            var list = new List<double>() { side1, side2, side3 };
             list.Sort();
             return (list[2], list[1], list[0]);
         }

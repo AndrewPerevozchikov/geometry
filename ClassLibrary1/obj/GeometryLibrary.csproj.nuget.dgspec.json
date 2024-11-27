@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pa198\\source\\repos\\ClassLibrary1\\ClassLibrary1\\GeometryLibrary.csproj": {}
+    "C:\\Users\\pa198\\OneDrive\\Рабочий стол\\Новая папка (2)\\geometry\\ClassLibrary1\\GeometryLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pa198\\source\\repos\\ClassLibrary1\\ClassLibrary1\\GeometryLibrary.csproj": {
+    "C:\\Users\\pa198\\OneDrive\\Рабочий стол\\Новая папка (2)\\geometry\\ClassLibrary1\\GeometryLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pa198\\source\\repos\\ClassLibrary1\\ClassLibrary1\\GeometryLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\pa198\\OneDrive\\Рабочий стол\\Новая папка (2)\\geometry\\ClassLibrary1\\GeometryLibrary.csproj",
         "projectName": "GeometryLibrary",
-        "projectPath": "C:\\Users\\pa198\\source\\repos\\ClassLibrary1\\ClassLibrary1\\GeometryLibrary.csproj",
+        "projectPath": "C:\\Users\\pa198\\OneDrive\\Рабочий стол\\Новая папка (2)\\geometry\\ClassLibrary1\\GeometryLibrary.csproj",
         "packagesPath": "C:\\Users\\pa198\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pa198\\source\\repos\\ClassLibrary1\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\pa198\\OneDrive\\Рабочий стол\\Новая папка (2)\\geometry\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.bars.group/repository/gkhsz/index.json": {},
+          "https://nexus.bars.group/repository/nuget.org-proxy/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -59,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

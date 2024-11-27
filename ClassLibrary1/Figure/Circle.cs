@@ -8,7 +8,7 @@ namespace GeometryLibrary.Figure
 {
     public class Circle : IFigure
     {
-        public double Radius { get; private set; }
+        private double Radius { get; }
 
         public Circle(double radius)
         {
