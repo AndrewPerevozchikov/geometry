@@ -12,7 +12,7 @@ namespace GeometryLibrary.Figure
 
         public Circle(double radius)
         {
-            if (!Validation(radius))
+            if (radius < 0)
                 throw new ArgumentException("Неверно указан радиус");
             Radius = radius;
         }
@@ -20,13 +20,6 @@ namespace GeometryLibrary.Figure
         public double GetSquare()
         {
             return Math.PI * Radius * Radius; ;
-        }
-
-        private bool Validation(double radius)
-        {
-            if (radius < 0)
-                return false;
-            return true;
         }
     }
 }
